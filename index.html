@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+<head>
+    <html lang="es" data-bs-theme="dark">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>HiddenCrews</title>
+    <meta name="keywords" content="Adri,ifp">
+    <meta name="description" content="adri game example">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/jquery-1.11.3.min.js"></script>
+</head>
+
+<body data-scroll-container>
+    <video id="background_video" loop muted></video>
+    <div id="video_cover"></div>
+    <div id="overlay"></div>
+
+    <div class="mb-4 div-header">
+        <header class="d-flex justify-content-center py-3">
+            <ul class="nav">
+                <li class="nav-item"><a href="#divVideoLogo" data-scroll-to class="nav-link header-item" aria-current="page">Inicio</a></li>
+                <li class="nav-item"><a href="#personajes" data-scroll-to class="nav-link header-item" id="button-personajes">Personajes</a></li>
+                <li class="nav-item"><a href="#bandas" data-scroll-to class="nav-link header-item">Bandas</a></li>
+                <li class="nav-item nav-item-near-to-download"><a href="#target-about" data-scroll-to class="nav-link header-item">Sobre Nosotros</a></li>
+                <li class="nav-item-download"><a href="https://drive.google.com/file/d/1AMeK33xGLksHTbvjD2uQ2s-4ozE1vDN5/view?usp=sharing" target="_blank" class="nav-link header-item">Descargar</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="container top-container" data-scroll-section>
+        <div class="row">
+            <div id="divVideoLogo" class="col-6 offset-3 center" style="text-align: center;">
+                <img src="img/GameLogo.png" alt="Logo del juego" style="width: 55%; margin-top: 10%; margin-bottom: -30%;">
+            </div>
+        </div>
+        <div class="row" style="margin-left: auto; margin-right: auto;">
+            <video style="margin-left: auto; margin-right: auto; margin-top: 135px;" id="videoLogo" loop muted autoplay>
+                <source src="video/VIDEO_GBS.webm" />
+            </video>
+            <div class="divPortadaParrafo">
+                <p class="textoSlogan"><strong>Forja tu banda y domina la ciudad<br> en Hidden Crews, la estrategia y el
+                        respeto te llevaran al poder</strong></p>
+                <button class="cta-slogan botonSlogan " id="buttonSlogan">
+                    <a href="https://drive.google.com/file/d/1AMeK33xGLksHTbvjD2uQ2s-4ozE1vDN5/view?usp=sharing" target="_blank"><span class="hover-underline-animation-slogan parrafoPortada"><strong>descargar</strong></span></a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- #### INICIO PERSONAJES #### -->
+    <div class="container" id="personajes" data-scroll-section>
+
+        <div id="direction0" style="transform: matrix3d(1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 892.564, 0, 0, 1);">
+            <h1 class="portada" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="30"
+                data-scroll-target="#direction0"><strong>Khalil "KB" Brown</strong></h1>
+        </div>
+
+        <div class="row" data-scroll="" data-scroll-speed="5">
+            <div class="col-4">
+                <div style="text-align: left;">
+                    <img src="img/A_Personaje1a.png" alt="Foto del personaje principal" style="width: 100%;">
+                </div>
+            </div>
+            <div class="col-8 p-3 align-self-center">
+                <div>
+                    <p class="parrafoPortada">Khalil, conocido como "KB", creció en las difíciles
+                        calles de Westmont Boulevard, donde se unió a la banda "21th Street" especializada en el tráfico
+                        de menta. Su astucia y valentía le valieron el respeto de sus compañeros y rivales, ganando su
+                        apodo por salir airoso de situaciones complicadas. Ascendiendo en el mundo del crimen, se
+                        convirtió en una figura clave en la banda, pero enfrentó desafíos y traiciones en su vida que le
+                        obligaron a tomar decisiones complicadas.</p>
+                    <button class="cta read-more-button" id="khalilButton">
+                        <span class="hover-underline-animation parrafoPortada" href="#direction-bandas-1" data-scroll-to> Leer más
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="direction1"
+            style="transform: matrix3d(1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, -892.564, 0, 0, 1); z-index: 99999999999999 !important;">
+            <h1 class="portada" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="-30"
+                data-scroll-target="#direction1"><strong>Hiroshi "El Tigre de la Oscuridad" Takahashi</strong></h1>
+        </div>
+
+        <div class="row" id="hiroshi" style="text-align: right;" data-scroll="" data-scroll-speed="5">
+            <div class="col-8 p-3 align-self-center">
+                <div>
+                    <p class="parrafoPortada">
+                        Hiroshi Takahashi, líder carismático de la banda "Yami no Tora", nació en Tokio en una familia
+                        influyente marcada por conflictos internos. Su inteligencia excepcional lo llevó a establecer
+                        una red de comercio ilegal de sustancias camufladas como "medicamentos". Conocido como "El Tigre
+                        de la Oscuridad", Hiroshi es respetado en el bajo mundo japonés por su astucia estratégica y
+                        ética personal en los negocios criminales.</p>
+                    <button class="cta-r read-more-button" id="hiroshiButton">
+                        <span class="hover-underline-animation-right parrafoPortada" href="#yaminotorabanda" data-scroll-to> Leer más </span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-4">
+                <div>
+                    <img src="img/J_Personaje12.png" alt="Foto del jefe de la banda japonesa" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+
+        <div id="direction2"
+            style="transform: matrix3d(1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 892.564, 0, 0, 1); z-index: 99999999999999 !important;">
+            <h1 class="portada" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="30"
+                data-scroll-target="#direction2"><strong>Enzo "Il Maestro" Moretti</strong></h1>
+        </div>
+
+        <div class="row" id="enzo" style="text-align: left;" data-scroll="" data-scroll-speed="5">
+            <div class="col-4">
+                <div>
+                    <img src="img/I_Personaje12.png" alt="Foto del jefe de la banda italiana" style="width: 100%;">
+                </div>
+            </div>
+            <div class="col-8 p-3 align-self-center">
+                <div>
+                    <p class="parrafoPortada">Enzo Moretti, originario de Nápoles, Italia, se destacó en el bajo mundo
+                        criminal por su astucia y ambición desde joven. Liderando la banda "IL Figlio di Enzo," expandió
+                        sus operaciones desde Italia hasta los Estados Unidos, abarcando el tráfico de drogas, el juego
+                        y la extorsión. Conocido como "Il Maestro," Enzo es el estratega maestro detrás de cada
+                        movimiento de su banda, manteniendo una posición de poder discreta pero indiscutible en el
+                        crimen organizado italiano.</p>
+                    <button class="cta read-more-button" id="enzoButton">
+                        <span class="hover-underline-animation parrafoPortada" href="#figliodienzobanda" data-scroll-to> Leer más </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="direction3"
+            style="transform: matrix3d(1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, -892.564, 0, 0, 1); z-index: 99999999999999 !important;">
+            <h1 class="portada" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="-30"
+                data-scroll-target="#direction3"><strong>Javier "El Dulcero" Morales</strong></h1>
+        </div>
+
+        <div class="row" id="javier" style="text-align: right;" data-scroll="" data-scroll-speed="5">
+            <div class="col-8 p-3 align-self-center">
+                <div>
+                    <p class="parrafoPortada">Javier Morales, apodado "El Dulcero," lidera "El Cartel de San Juan," una
+                        banda de East Los Angeles especializada en el inusual comercio de azúcar. Su astucia y liderazgo
+                        enmascaran las actividades ilícitas de contrabando de azúcar de alta calidad. Aunque peculiar,
+                        utiliza la banda como un frente para proteger y empoderar a su comunidad, destinando parte de
+                        los ingresos a brindar recursos y oportunidades a quienes estarían marginados.</p>
+                    <button class="cta-r read-more-button" id="javierButton">
+                        <span class="hover-underline-animation-right parrafoPortada" href="#carteldesanjuanbanda" data-scroll-to> Leer más </span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-4">
+                <div>
+                    <img src="img/L_Personaje12.png" alt="Foto del jefe de la banda latina" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #### FIN PERSONAJES #### -->
+    <div style="width: 100%; height: 50px;" data-scroll-section id="direction-bandas"></div>
+
+    <div data-scroll-section style="width: 100%; height: 50px;" id="direction-bandas-2">
+        <div>
+            <h1 class="texto-bandas" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="-10"
+                data-scroll-target="#direction-bandas" id="titulo-bandas"><strong>bandas</strong></h1>
+        </div>
+    </div>
+    <!-- OPACIDAD -->
+    <div class="bg-opacity" data-scroll-section id="opacity">
+
+        <!-- 21TH STREET -->
+        <div class="container" id="bandas"
+            style="width: 100%; height: 100%; z-index: 99999999 !important; position: relative; margin-top: 200px;">
+            <div style="width: 100%; height: 50px;"></div>
+            <div class="container p-1" id="thStreet">
+                <div class="row" id="direction-bandas-1">
+                    <div data-scroll-container style="width: 100%; height: 50px;" id="bandaamericana">
+                        <div>
+                            <h1 class="texto-bandas" data-scroll="" data-scroll-direction="horizontal"
+                                data-scroll-speed="-10" data-scroll-target="#bandaamericana"><strong>21th Street</strong></h1>
+                        </div>
+                        <div class="-two">
+                            <h1 class="texto-bandas " data-scroll="" data-scroll-direction="horizontal"
+                                data-scroll-speed="-35" data-scroll-target="#bandaamericana" data-scroll-delay="0.05"><strong>21th Street</strong></h1>
+                        </div>
+                        <div class="-three">
+                            <h1 class="texto-bandas" data-scroll="" data-scroll-direction="horizontal"
+                                data-scroll-speed="-35" data-scroll-target="#bandaamericana" data-scroll-delay="0.03"><strong>21th Street</strong></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 10%;">
+                    <div class="col-5 align-self-center">
+                        <h2>Orígenes</h2>
+                        <p class="parrafoPortada">En la adolescencia de KB, se unió a la banda "21th Street", un grupo
+                            dedicado al tráfico de menta, una droga sintética que dominaba las calles. Khalil no era un
+                            simple soldado; su astucia y valentía en el campo de batalla urbano lo convirtieron en un
+                            guerrero respetado por sus compañeros. Su apodo, "KB", nació de su capacidad para salir
+                            ileso de las situaciones más peliagudas, una habilidad que lo distinguía en el peligroso
+                            mundo del hampa.</p>
+                    </div>
+                    <div class="col-6 offset-1">
+                        <img src="img/A_Origenes.png" alt="Foto de los origenes del personaje principal" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 10%;">
+                    <div class="col-5 align-self-center">
+                        <h2>KB:</h2>
+                        <p class="parrafoPortada">Khalil Brown, apodado "KB", emergió de las fauces de Westmont
+                            Boulevard, un lugar donde la esperanza se marchitaba bajo la sombra del crimen. Desde niño,
+                            se vio envuelto en un torbellino de violencia y pobreza, una realidad que forjó su carácter
+                            y le enseñó a sobrevivir a toda costa.</p>
+                    </div>
+                    <div class="col-6 offset-1">
+                        <img src="img/A_Personaje2.png" alt="Foto de la infancia del personaje principal" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 10%;">
+                    <div class="col-5 align-self-center">
+                        <h2>Legado:</h2>
+                        <p class="parrafoPortada">A medida que "21th Street" escalaba posiciones en la jerarquía
+                            criminal, Khalil se consolidó como una pieza fundamental. Su determinación y sus habilidades
+                            estratégicas le valieron el reconocimiento y la confianza de los líderes de la banda. Sin
+                            embargo, el camino hacia el éxito estaba plagado de peligros y traiciones. Khalil era
+                            consciente de que en el mundo del crimen, la lealtad era tan efímera como la niebla.</p>
+                    </div>
+                    <div class="col-6 offset-1">
+                        <img src="img/A_Legado.png" alt="Foto del legado de la banda del personaje principal" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN 21TH STREET -->
+
+        <!-- YAMI NO TORA -->
+        <div class=" bg-black p-1 bg-blur bg-black-bandas" style="--bs-bg-opacity: .2">
+            <div class="container" id="yamiNoTora">
+                <div class="row" style="margin-bottom: 30px;">
+                    <!-- <h1 class="portada text-end" style="margin-top: 35px;"><strong>Yami No Tora</strong></h1> -->
+                    <div data-scroll-container style="width: 100%; height: 50px;" id="yaminotorabanda">
+                        <div>
+                            <h1 class="texto-bandas" data-scroll="" data-scroll-direction="horizontal"
+                                data-scroll-speed="10" data-scroll-target="#yaminotorabanda"><strong>Yami no
+                                    Tora</strong></h1>
+                        </div>
+                        <div class="-two">
+                            <h1 class="texto-bandas " data-scroll="" data-scroll-direction="horizontal"
+                                data-scroll-speed="35" data-scroll-target="#yaminotorabanda" data-scroll-delay="0.05"><strong>Yami no
+                                    Tora</strong></h1>
+                        </div>
+                        <div class="-three">
+                            <h1 class="texto-bandas" data-scroll="" data-scroll-direction="horizontal"
+                                data-scroll-speed="35" data-scroll-target="#yaminotorabanda" data-scroll-delay="0.03"><strong>Yami no
+                                    Tora</strong></h1>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-bottom: 10%;">
+                    <div class="col-6">
+                        <img src="img/J_Origenes.png" alt="Foto de los orígenes del jefe de la banda japonesa" class="img-fluid rounded">
+                    </div>
+                    <div class="col-5 offset-1 align-self-center">
+                        <h2>Orígenes</h2>
+                        <p class="parrafoPortada">En las calles bulliciosas de Tokio, Japón, nació Hiroshi Takahashi, un
+                            joven que desde pequeño se distinguía por su intelecto agudo y su mirada penetrante. Criado
+                            en el seno de una familia influyente, pero marcada por la discordia, Hiroshi desarrolló una
+                            astucia precoz y una habilidad innata para navegar en las aguas turbulentas del poder.</p>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 10%;">
+                    <div class="col-6">
+                        <img src="img/J_Peronaje2.png" alt="Foto del jefe de la banda japonesa" class="img-fluid rounded">
+                    </div>
+                    <div class="col-5 offset-1 align-self-center">
+                        <h2>Hiroshi Takahashi:</h2>
+                        <p class="parrafoPortada">Conocido como "El Tigre de la Oscuridad", Hiroshi se convirtió en una
+                            figura legendaria en el bajo mundo japonés. Su aura de misterio y su astucia incomparable lo
+                            convirtieron en un líder respetado y temido. A diferencia de otros jefes criminales, Hiroshi
+                            no recurría a la violencia gratuita. Su dominio se basaba en la inteligencia estratégica, la
+                            planificación meticulosa y la lealtad inquebrantable de sus seguidores.</p>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 10%;">
+                    <div class="col-6">
+                        <img src="img/J_Legado.png" alt="Foto del legado de la banda japonesa" class="img-fluid rounded">
+                    </div>
+                    <div class="col-5 offset-1 align-self-center">
+                        <h2>Legado:</h2>
+                        <p class="parrafoPortada">La historia de Hiroshi Takahashi es una saga de ambición desmedida,
+                            astucia sin igual y la compleja dualidad del liderazgo en el mundo del crimen. Su vida en
+                            las sombras de Yami no Tora está plagada de peligros y decisiones difíciles, mientras se
+                            adentra cada vez más en las profundidades del imperio que él mismo ha creado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN YAMI NO TORA -->
+
+        <!-- BANDA ITALIANA -->
+        <div class="container" id="ilFiglioDiEnzo">
+            <div class="row">
+                <div data-scroll-container style="width: 100%; height: 50px;" id="figliodienzobanda">
+                    <div>
+                        <h1 class="texto-bandas" data-scroll="" data-scroll-direction="horizontal"
+                            data-scroll-speed="-10" data-scroll-target="#figliodienzobanda"><strong>Il Figlio di Enzo</strong></h1>
+                    </div>
+                    <div class="-two">
+                        <h1 class="texto-bandas " data-scroll="" data-scroll-direction="horizontal"
+                            data-scroll-speed="-35" data-scroll-target="#figliodienzobanda" data-scroll-delay="0.05"><strong>Il Figlio di Enzo</strong></h1>
+                    </div>
+                    <div class="-three">
+                        <h1 class="texto-bandas" data-scroll="" data-scroll-direction="horizontal"
+                            data-scroll-speed="-35" data-scroll-target="#figliodienzobanda" data-scroll-delay="0.03"><strong>Il Figlio di Enzo</strong></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 10%;">
+                <div class="col-5 align-self-center">
+                    <h2>Orígenes</h2>
+                    <p class="parrafoPortada">En las calles empapadas de Nápoles, Italia, Enzo Moretti se crió en la
+                        cuna del crimen. Desde temprana edad, su astucia e inquebrantable ambición lo destacaron en el
+                        bajo mundo. Forjando una banda conocida como "Il Figlio di Enzo" (El Hijo de Enzo), Enzo comenzó
+                        a construir su imperio criminal.</p>
+                </div>
+                <div class="col-6 offset-1">
+                    <img src="img/I_Origenes.png" alt="Foto de los orígenes de la banda italiana" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 10%;">
+                <div class="col-5 align-self-center">
+                    <h2>Il Maestro:</h2>
+                    <p class="parrafoPortada">Enzo Moretti, apodado "Il Maestro" (El Maestro), se convirtió en una
+                        figura legendaria en el mundo del crimen. Su fama no se basaba en la violencia o la brutalidad,
+                        sino en su impecable capacidad para planificar y ejecutar estrategias maestras. Desde las
+                        sombras, "Il Maestro" movía los hilos del imperio criminal, manteniendo un aura de misterio y
+                        poder.</p>
+                </div>
+                <div class="col-6 offset-1">
+                    <img src="img/I_Personaje2.png" alt="Foto del jefe de la banda italiana" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 10%;">
+                <div class="col-5 align-self-center">
+                    <h2>Legado:</h2>
+                    <p class="parrafoPortada">La historia de Enzo Moretti y "Il Figlio di Enzo" es una saga de astucia,
+                        ambición y poder. Un imperio criminal construido sobre la lealtad, la estrategia y la capacidad
+                        de adaptarse a un mundo en constante cambio. El legado de "Il Maestro" pervive en las calles,
+                        recordándonos la oscura fascinación que genera el mundo del crimen organizado.</p>
+                </div>
+                <div class="col-6 offset-1">
+                    <img src="img/I_Legado.png" alt="Foto del legado de la banda italiana" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+        <!-- FIN BANDA ITALIANA -->
+
+        <!-- BANDA LATINA -->
+        <div class=" bg-black p-1 bg-blur" style="--bs-bg-opacity: .2;">
+            <!-- <div style="width: 100%; height: 100px;"></div> -->
+            <div class="container" id="cartelDeSanJuan">
+                <div class="row">
+                    <div data-scroll-container style="width: 100%; height: 50px;" id="carteldesanjuanbanda">
+                        <div>
+                            <h1 class="texto-bandas" data-scroll="" data-scroll-direction="horizontal"
+                                data-scroll-speed="10" data-scroll-target="#carteldesanjuanbanda" ><strong>Cartel de San Juan</strong></h1>
+                        </div>
+                        <div class="-two">
+                            <h1 class="texto-bandas " data-scroll="" data-scroll-direction="horizontal"
+                                data-scroll-speed="35" data-scroll-target="#carteldesanjuanbanda" data-scroll-delay="0.05"><strong>Cartel de San Juan</strong></h1>
+                        </div>
+                        <div class="-three">
+                            <h1 class="texto-bandas" data-scroll="" data-scroll-direction="horizontal"
+                                data-scroll-speed="35" data-scroll-target="#carteldesanjuanbanda" data-scroll-delay="0.03"><strong>Cartel de San Juan</strong></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 10%;">
+                    <div class="col-6">
+                        <img src="img/L_Origenes.png" alt="Foto de los orígenes del jefe de la banda latina" class="img-fluid rounded">
+                    </div>
+                    <div class="col-5 offset-1 align-self-center">
+                        <h2>Orígenes</h2>
+                        <p class="parrafoPortada">En las calles de East Los Angeles, Javier Morales, apodado "El
+                            Dulcero," creció en una comunidad empobrecida y marginada. Desde joven, se vio envuelto en
+                            el comercio ilegal, buscando una mejor vida para él y su gente. Con el tiempo, "El Dulcero"
+                            se convirtió en un líder nato, reconocido por su astucia y capacidad para tomar decisiones
+                            difíciles.</p>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 10%;">
+                    <div class="col-6">
+                        <img src="img/L_Personaje2.png" alt="Foto del jefe de la banda latina" class="img-fluid rounded">
+                    </div>
+                    <div class="col-5 offset-1 align-self-center">
+                        <h2>El Dulcero:</h2>
+                        <p class="parrafoPortada">En los bajos fondos de East Los Angeles, donde el sol se diluye en
+                            callejones y la esperanza se tambalea, un nombre resuena con una mezcla de temor y
+                            reverencia: Javier Morales, "El Dulcero". Su leyenda no se forja en la sangre o el terror,
+                            sino en la astucia y el liderazgo, tejiendo una red de protección tan dulce como peligrosa.
+                        </p>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 10%;">
+                    <div class="col-6">
+                        <img src="img/L_Legado.png" alt="Foto del legado de la banda latina" class="img-fluid rounded">
+                    </div>
+                    <div class="col-5 offset-1 align-self-center">
+                        <h2>Legado:</h2>
+                        <p class="parrafoPortada">La historia de "El Dulcero" es una crónica de un líder complejo y
+                            contradictorio. Un hombre que caminaba por la delgada línea entre el bien y el mal,
+                            utilizando el crimen para alcanzar un bien mayor. Su legado es una mezcla de controversia y
+                            admiración, dejando una huella imborrable en la comunidad de East Los Angeles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN BANDA LATINA -->
+    </div>
+    <!-- FIN OPACIDAD -->
+
+    <div data-scroll-section class="bg-about about-us" id="target-about">
+        <div style="padding-top: 5%;">
+            <h1 class="texto-bandas" data-scroll="" data-scroll-direction="horizontal"
+            data-scroll-speed="10" data-scroll-target="#target-about" id="target22" style="margin-bottom: -80px;"><strong>
+                    SOBRE</strong></h1>
+            <h1 class="texto-bandas" data-scroll="" data-scroll-direction="horizontal"
+            data-scroll-speed="-10" data-scroll-target="#target22" data-scroll-delay="0.3"><strong>
+                    NOSOTROS</strong></h1>
+        </div>
+        <div class="about-section" style="width: 100%;">
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-5 offset-1">
+                    <p class="portada" style=" height: 100px;">
+                        ¿QUIENES SOMOS?
+                    </p>
+                    <!-- <p class="texto-about">
+                        Somos un grupo de alumnos que juntos formamos <b style="color: #F03E0B;">Game Band Studios</strong>
+                        , formado por: Sergi Rebollo, Fernando Sánchez, Pau Carmona, Carlos Jímenez y Adrián Fernández
+                    </p> -->
+                    <p class="texto-about">
+                        Somos un grupo de alumnos que juntos formamos <strong>Game Band Studios</strong>
+                        , formado por: Sergi Rebollo, Fernando Sánchez, Pau Carmona, Carlos Jiménez y Adrián Fernández
+                    </p>
+                </div>
+                <div class="col-5">
+                    <p class="portada ml-3" style=" height: 100px;">
+                        ¿PORQUE ESTE PROYECTO?
+                    </p>
+                    <p class="texto-about">
+                        Este proyecto esta hecho como trabajo de final de curso. 
+                        Desde un principio teniamos en mente hacer un proyecto grande y ambicioso, 
+                        ya que queríamos hacer algo diferente con mecánicas únicas.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="#divVideoLogo" data-scroll-to class="nav-link px-3 text-body-secondary">Inicio</a></li>
+                <li class="nav-item"><a href="#personajes" data-scroll-to class="nav-link px-3 text-body-secondary">Personajes</a></li>
+                <li class="nav-item"><a href="#bandas" data-scroll-to class="nav-link px-3 text-body-secondary">Bandas</a></li>
+                <li class="nav-item"><a href="#target-about" data-scroll-to class="nav-link px-3 text-body-secondary">Sobre Nosotros</a></li>
+                <li class="nav-item nav-item-near-to-download"><a href="legal-info.html" target="_blank" class="nav-link px-3 text-body-secondary">Información Legal</a></li>
+                <li class="nav-item-download"><a href="https://drive.google.com/file/d/1AMeK33xGLksHTbvjD2uQ2s-4ozE1vDN5/view?usp=sharing" target="_blank" class="nav-link header-item">Descargar</a></li>
+            </ul>
+            <p class="text-center text-body-secondary"><b style="color: #F03E0B;">© Game Band Studios, Inc</strong></p>
+        </footer>
+    </div>
+
+    <script src="js/bideo.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script>
+        const LocoScroll = new LocomotiveScroll({
+            el: document.querySelector("[data-scroll-container]"),
+            smooth: true
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+:root {
+  --main-color: #f03e0b;
+}
+body{
+  width: 100%;
+  height: 1000px;
+}
+
+main {
+  background-color: rgb(24, 24, 24);
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  height: 100%;  
+  width: 100%;
+}
+
+main p{
+  font-weight: bold;
+  display: flex;
+}
+
+div{
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  text-align: left;
+  margin-left: 10%;
+  margin-top: -5%;
+  width: 100%;
+}
+
+.texto{
+  text-transform: lowercase;
+  font-size: 25px;
+  letter-spacing: -0.04em;
+  line-height: 1.2em;
+  font-weight: normal;
+}
+
+.title {
+  font-size: 10rem;
+  letter-spacing: -0.04em;
+  color: var(--main-color);
+  text-transform: uppercase;  
+  text-align: center;
+  color: var(--main-color);
+  margin-top: 30%;
+  font-weight: bold;
+}
