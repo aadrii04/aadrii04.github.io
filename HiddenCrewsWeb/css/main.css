@@ -446,6 +446,18 @@ header {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.footer-cc-atribution{
+  text-decoration: none;
+}
+
+.strong-footer{
+  color:var(--main-color);
+}
+
+.strong-footer:hover{
+  scale: 125px;
+}
+
 @media (max-width: 3000px) {
   .about-section .portada {
     font-size: 4rem;
