@@ -25,5 +25,3 @@ bun.lockb
 
 # macOS-specific files
 .DS_Store
-
-.vercel/**/*

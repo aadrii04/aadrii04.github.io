@@ -1,0 +1,24 @@
+import { a as allPlaylists, s as songs } from './_id__7117ec8a.mjs';
+/* empty css                           */import '../astro_2e571624.mjs';
+import 'html-escaper';
+import 'clsx';
+import 'react/jsx-runtime';
+import 'zustand';
+import 'react';
+import '@radix-ui/react-slider';
+
+async function GET({ params, request }) {
+  // get the id from the url search params
+  const { url } = request;
+  const urlObject = new URL(url);
+  const id = urlObject.searchParams.get('id');
+
+  const playlist = allPlaylists.find((playlist) => playlist.id === id);
+  const songs$1 = songs.filter(song => song.albumId === playlist?.albumId);
+
+  return new Response(JSON.stringify({ playlist, songs: songs$1 }), {
+    headers: { "content-type": "application/json" },
+  })
+}
+
+export { GET };
